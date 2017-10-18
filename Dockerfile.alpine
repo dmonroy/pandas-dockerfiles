@@ -1,0 +1,5 @@
+FROM dmonroy/numpy:{numpy_version}
+
+MAINTAINER Darwin Monroy <contact@darwinmonroy.com>
+
+RUN pip install pandas=={pandas_version}
