@@ -1,6 +1,6 @@
 # FILE GENERATED AUTOMATICALLY, DO NOT EDIT MANUALLY
 
-FROM dmonroy/numpy:py3.7-rc-1.13
+FROM dmonroy/numpy:py3.5
 
 MAINTAINER Darwin Monroy <contact@darwinmonroy.com>
 
