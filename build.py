@@ -2,9 +2,12 @@ import os
 
 import shutil
 
-NUMPY_VERSIONS = [
-    'py3.7-rc-1.13',
-    'py3.6-1.13.3'
+PYTHON_VERSIONS = [
+    'py3.7-rc',
+    'py3.6',
+    'py3.5',
+    'py3.4',
+    'py2.7'
 ]
 
 PANDAS_VERSIONS = [
@@ -22,9 +25,9 @@ def main():
     except FileNotFoundError:
         pass
 
-    for numpy_version in NUMPY_VERSIONS:
+    for python_version in PYTHON_VERSIONS:
         for pandas_version in PANDAS_VERSIONS:
-            path = 'dockerfiles/{numpy_version}/{pandas_version}'.format(**locals())
+            path = 'dockerfiles/{python_version}/{pandas_version}'.format(**locals())
             os.makedirs(path, exist_ok=True)
 
             with open('{path}/Dockerfile'.format(**locals()), 'w') as f:

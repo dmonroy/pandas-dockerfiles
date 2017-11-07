@@ -1,4 +1,4 @@
-FROM dmonroy/numpy:{numpy_version}
+FROM dmonroy/numpy:{python_version}
 
 MAINTAINER Darwin Monroy <contact@darwinmonroy.com>
 
